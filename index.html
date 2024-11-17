@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الكتروني</title>
+     <link rel="stylesheet" href="styled.css"> 
+  <!--     <link rel="stylesheet" <!href="soso-style.css">  -->
+</head>
+<body>
+<div class="contianer"  >
+ <div class="product">
+<div class="gallery">
+    <img src="images/a3.jpg"  id="productImg"></img>
+  <div class="controls">
+        <span class="btn  active"></span>
+        
+        <span class="btn"></span>
+        <span class="btn"></span>    
+   </div> 
+</div> 
+      <div class="detials">
+       <h1>حذاءسبورت</h1>
+       <h2>15$</h2>
+       <h3>30٪  OFF</h3>
+       <p>قاعدة مرنة وجلد طبيعي يمنع  الروائح كما انها مرنة ومريحة في المشي وذات قاعدة قوية ومرنة مصنوعة من المطاط الطبيعي غير منزلقة حيث تتعرج من القاع  لمنع الانزلاق  ولها ثلاث طبقات من الداخل مبطنة بالسفنج لراحة القدم اثثناء المشي اي انها تشبة الاحذية الطبية.
+       </p>
+      <form>
+          <div class="size_select">
+           <p>size</p>
+           <label for="small" >
+            <input type="radio" name="size" id="small">  
+            <snap>36</snap> 
+           </label>
+           
+            <label for="medium" >
+            <input type="radio" name="size" id="medium">  
+            <snap>38</snap> 
+           </label>
+           
+              <label for="large" >
+            <input type="radio" name="size" id="large">  
+            <snap>40</snap> 
+           </label>
+           <label for="x-large" >
+            <input type="radio" name="size" id="x-large">  
+            <snap>42</snap> 
+           </label> 
+            </div>
+          <div class="color-select">
+           <p>color</p>  
+          <label   for="red">
+           <input type="radio" name="color" id="red">
+          <span class="color-1"></span> 
+          </label>
+        <label   for="green">
+           <input type="radio" name="color" id="green">
+          <span class="color-2"></span> 
+          </label> 
+          <label   for="blue">
+           <input type="radio" name="color" id="blue">
+          <span class="color-3"></span> 
+          </label>
+          <label   for="pink">
+           <input type="radio" name="color" id="pink">
+          <span class="color-4"></span> 
+          </label>  
+          </div>  
+        <div class="quantity-select">
+            <p>quantity</p>
+            <input type="number" value="1">
+            <button>Buy Now</butto>
+        </div>  
+          
+          
+      </form>
+      </div>
+      </div>
+      </div>
+  <script>
+      let productImg=document.getElementById("productImg")
+     
+   <!-- يتم تحديد مجموعة btn ووضعها في مصفوقة او قائمة تلقائيا خلال الاريعاز التالي -->  
+      let btn=document.getElementsByClassName("btn")
+   btn[0].onclick=function(){
+       productImg.src="images/a3.jpg";
+       for(bt of btn){
+       bt.classList.remove("active");
+    }   
+    this.classList.add("active")
+   }
+     btn[1].onclick=function(){
+       productImg.src="images/a2.jpg";
+      for(bt of btn){
+       bt.classList.remove("active");
+    }   
+    this.classList.add("active")   
+   }
+     btn[2].onclick=function(){
+       productImg.src="images/a1.jpg";
+       for(bt of btn){
+       bt.classList.remove("active");
+    }   
+    this.classList.add("active")  
+   }
+      
+  </script>
+      </body>
+      </html>
+      
