@@ -4,15 +4,22 @@
     box-sizing:border-box;
     font-family:'poppins'sans
 }
+.head{
+       display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
 .contianer{
     width:100% ;
-    min-height:100vh;
+    min-height:90vh;
     background: #d0eaff;
     display:flex;
     align-items:center;
     justify-content:center;
     
 }
+
 
 
 .product{width:100%;
