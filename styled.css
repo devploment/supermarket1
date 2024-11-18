@@ -171,16 +171,16 @@ margin-right:50px;
 }
 .controls{
     position:absolute;
-    bottom: 20px;
+    bottom:40px;
     right: 20px;
     
 }
 
 .btn{
-   display:block;
+   display:inline-block;
     width:20px ;
     height:20px ;
     border-radius:50% ; background:rgba(255,255,255,0.5) ;
-    margin:10px ;
+    margin:0px ;
     cursor:pointer;
 }.btn.active{background: #2600ff;}
